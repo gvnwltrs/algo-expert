@@ -12,6 +12,7 @@ function twoNumberSum(array, targetSum) {
   array.forEach(element => {
     if (!arrayHashTable.has(targetSum - element)) {
       arrayHashTable.set(element, true); 
+      arrayHashTable.set(2, true); 
     }
   });
 
