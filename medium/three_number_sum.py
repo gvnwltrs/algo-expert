@@ -1,3 +1,5 @@
+
+# s1
 def threeNumberSum(array, targetSum):
     triplets = []
 

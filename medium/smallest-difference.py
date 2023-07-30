@@ -1,3 +1,5 @@
+
+#s1
 def smallestDifference(arrayOne, arrayTwo):
     smallest_difference = None
     
