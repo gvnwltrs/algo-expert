@@ -17,4 +17,5 @@ def validate_bst_helper(tree, min_value, max_value):
         return False 
 
     left_is_valid = validate_bst_helper(tree.left, min_value, tree.value)
-    return left_is_valid and validate_bst_helper(tree.right, tree.value, max_value)
+    right_is_valid = validate_bst_helper(tree.right, tree.value, max_value)
+    return left_is_valid and right_is_valid
