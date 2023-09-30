@@ -1,3 +1,27 @@
+
+
+# Given a Binary Tree, we are asked to find the depth of each node in the tree and return the sum of all nodes' depths. The depth of the root node is 0.
+
+# Example:
+
+# Binary tree:
+#              1
+#            /   \
+#           2     3
+#         /   \
+#        4     5
+
+# Output: 6
+# Explanation:
+#                     1 --- depth: 0
+#                   /   \
+#     depth: 1 --- 2     3 --- depth: 1
+#                /   \
+#  depth: 2 --- 4     5 --- depth: 2
+
+# sum = 0 + 1 + 1 + 2 + 2 = 6
+
+
 def nodeDepths(root):
     total_sum = [0] # use a list object to allow pass by reference
     depth_sums(root, 0, total_sum)

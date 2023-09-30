@@ -1,3 +1,6 @@
+
+
+
 def generateDocument(characters, document):
     if len(document) == 0:
         return True

@@ -1,3 +1,6 @@
+
+# Given a Binary Search Tree and a target integer, we are asked to write a function that is going to return the value in the BST that is closest to the target. We can assume there is only one closest value.
+
 def findClosestValueInBst(tree, target):
     closest_value = tree.value
     

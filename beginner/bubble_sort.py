@@ -1,3 +1,6 @@
+
+# Given an array of integers, we are asked to sort the input array in ascending order using Bubble Sort and return the sorted array.
+
 def bubbleSort(array):
     elements = len(array)-1
     still_sorting = True

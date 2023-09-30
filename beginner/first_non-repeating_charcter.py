@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+
+
 def firstNonRepeatingCharacter(string):
     if len(string) == 1:
         return 0

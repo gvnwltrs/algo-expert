@@ -1,3 +1,6 @@
+
+
+
 def optimalFreelancing(jobs):
     if len(jobs) < 1:
         return 0

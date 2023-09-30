@@ -1,3 +1,7 @@
+'''
+Given a sorted array of integers and a target integer, I am asked to write a function that uses Binary Search algorithm to find out if the target integer is in the array. If the target is in the array, the function should return its index, otherwise return -1.
+'''
+
 def binarySearch(array, target):
     
     left = 0 

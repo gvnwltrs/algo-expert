@@ -1,3 +1,8 @@
+
+# Given an array of integers, we are asked to sort the array in ascending order with the Selection Sort.
+
+
+
 def selectionSort(array):
     for i in range(len(array) -1):
         select = array[i]

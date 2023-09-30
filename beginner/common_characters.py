@@ -1,3 +1,8 @@
+
+
+
+
+
 def commonCharacters(strings):
     STRINGS_COUNT = len(strings)-1
     count = 0 
