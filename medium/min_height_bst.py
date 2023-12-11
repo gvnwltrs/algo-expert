@@ -7,8 +7,8 @@ def minHeightBst(array):
     return constructMinHeights(array, None, 0, len(array) - 1)
 
 def constructMinHeighBst(array, bst, startIdx, endIdx):
-    if endIdx < startIdx: # if endidx has crossoved over startidx break
         return
+if endIdx < startIdx: # if endidx has crossoved over startidx break
     midIdx = (startIdx + endIdx) // 2 # find our middle
     newBstNode = BST(array[midIdx]) # setup new node with new value
     if bst is None:
@@ -31,9 +31,9 @@ class BST:
         self.value = value
         self.left = None
         self.right = None
+        if value < self.value:
 
     def insert(self, value):
-        if value < self.value:
             if self.left is None:
                 self.left = BST(value)
             else:
