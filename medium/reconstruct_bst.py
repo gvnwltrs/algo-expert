@@ -21,16 +21,18 @@ def reconstructBst(preOrderTraversalValues):
     return createBst(BST(preOrderTraversalValues.pop(0)), preOrderTraversalValues)
 
 def createBst(root, values):
-    if values is None or values[1] is None:
-        return
-    next_node = BST(values.pop(0))
+    root = BST(preOrderTraversalValues[0])
+    left_tree = []
+    right_tree = []
+    for node_value in preOrderTraversalValues[1:]: #O(n-1)
+        if node_value < root.value:
+            left_tree.append(node_value)
+        else:
+            right_tree.append(node_value)
 
-    if next_node.value < root.value:
-        root.left = next_node.value
-        createBst(next_node, values)
-
-    if root.value > root.value:
-        root.right = next_node.value
-        createBst(next_node, values)
-
+    if left_tree:
+        root.left = reconstructBst(left_tree)
+    if right_tree:
+        root.right = reconstructBst(right_tree)
+        
     return root
