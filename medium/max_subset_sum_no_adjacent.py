@@ -2,7 +2,7 @@
 # Time: O(n) | Space: O(1)
 
 def maxSubsetSumNoAdjacent(array):
-    if not len(array):
+    if len(array) == 0:
         return 0
     elif len(array) == 1:
         return array[0]
