@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 
 # Time: O(n) | Space: O(1)
 
@@ -14,4 +15,10 @@ def maxSubsetSumNoAdjacent(array):
         current = max(first, second + array[i])
         second = first
         first = current
-    return first 
+    return first
+
+array = [2, 5, 3, 2, 4]
+
+result = maxSubsetSumNoAdjacent(array)
+
+print(result)
