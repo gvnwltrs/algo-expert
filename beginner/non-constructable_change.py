@@ -12,3 +12,5 @@ def nonConstructibleChange(coins):
         minimum_change += coin 
   
     return minimum_change + 1 
+
+# Time complexity: O(nlogn) | space complexity: O(1)
